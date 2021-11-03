@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+a{
+    color:#444444;
+    text-decoration: none;
+}
+ 
+ul{ 
+    list-style-type: none;/*no bullet*/
+    margin:0;
+    padding:0; 
+    
+    li{ 
+        text-decoration: none;
+        display: inline; 
+        padding-left: 2em;
+    } 
+}
+.navbar{
+    background:white;
+    /*used to create distance between content and border of an element*/
+    padding:1em;
+
+    /*nesting stuff*/
+
+    nav{
+        display: none;
+    }
+    
+    .container{ 
+        justify-content: space-between;
+        vertical-align: top;
+        display:inline-block
+        
+        .logo{
+            text-align:left;
+            text-decoration: none;
+            font-weight: bold;
+            color:black;
+            font-size: 1.2em;
+    
+            span{
+                text-align:left;
+                color:var(--juniper-color);
+            }
+        } 
+
+        .primary-nav{    
+            float:right;
+            padding-right:10em;
+        }
+
+        .secondary-nav{  
+            background:var(--juniper-color);
+            text-decoration: none;
+            right: 2%;
+            top: 1%;
+            text-align: center;
+            padding:.6em; 
+            margin-left: -0.25em;
+            font-size:0.8em;
+            border-radius: 5em;
+            position: absolute;
+            
+        }
+    }
+ 
+}
+
+body{
+    background: #f2f2f2;
+    /* Margin is used in an element to create distance between that element and other elements of page*/
+    margin: 0;
+    font-family:'Poppins';
+}
+
+:root{
+    --juniper-color:#2db575;
+}
+
+.title{
+    width:100%;   
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+.juniper-text{
+    position: relative;
+    z-index: 3;  
+}
